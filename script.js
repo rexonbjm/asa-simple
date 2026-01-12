@@ -36,3 +36,31 @@ const interval = setInterval(() => {
     setTimeout(() => loader.classList.add('fade'), 400);
   }
 }, 400);
+
+// Form submission handler
+const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  // Get email input
+  const emailInput = contactForm.querySelector('input[placeholder="Your Email"]');
+  const email = emailInput.value.trim();
+  
+  // Email validation regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address');
+    emailInput.focus();
+    return;
+  }
+  
+  // If valid, reset form and show success message
+  contactForm.reset();
+  formMessage.style.display = 'block';
+  setTimeout(() => {
+    formMessage.style.display = 'none';
+  }, 3000);
+});
