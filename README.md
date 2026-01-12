@@ -15,7 +15,7 @@ A modern, responsive website for the Asian Student Association, featuring smooth
 
 ```
 asa_simple/
-├── asa.html        # Main HTML file
+├── index.html        # Main HTML file
 ├── styles.css      # All CSS styles
 ├── script.js       # JavaScript functionality
 └── README.md       # Project documentation
@@ -37,14 +37,14 @@ asa_simple/
 
 ## How to Use
 
-1. Open `asa.html` in any modern web browser
+1. Open `index.html` in any modern web browser
 2. Navigate through sections using the header navigation or by scrolling
 3. Fill out the contact form to get in touch
 
 ## Customization
 
 - **Colors**: Modify CSS custom properties in `styles.css` (`:root` section)
-- **Content**: Update text and sections in `asa.html`
+- **Content**: Update text and sections in `index.html`
 - **Animations**: Adjust timing and effects in `styles.css` and `script.js`
 
 ## Browser Compatibility
